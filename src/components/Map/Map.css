@@ -1,0 +1,43 @@
+.map {
+    padding: 200px 0;
+    background-color: #fff;
+}
+
+.leaflet-container {
+  height: 100vh; 
+  width: 100%; 
+}
+  
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .map {
+      padding: 100px 0;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .map {
+      padding: 100px 0;
+    }
+    .map__content {
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    .map__content::-webkit-scrollbar {
+      background-color: transparent;
+      width: 0;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 768px) {
+    .map {
+      padding: 100px 0;
+    }
+    .map__content {
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    .map__content::-webkit-scrollbar {
+      background-color: transparent;
+      width: 0;
+    }
+}

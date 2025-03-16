@@ -1,0 +1,53 @@
+.quote {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.quote__text {
+    text-align: center;
+    height: 57px;
+}
+
+.quote__text p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+}
+
+.quote__text p::after {
+    position: absolute;
+    content: "Нэт Янг, первый Чемпион Мира по сёрфингу";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.04em;
+    top: 35px;
+    right: 160px;
+}
+  
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .quote__text p::after {
+      right: 100px;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .quote__text p::after {
+      right: 30px;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 768px) {
+    .quote__text p {
+      font-size: 18px;
+    }
+    .quote__text p::after {
+      top: 20px;
+      right: 20px;
+    }
+}

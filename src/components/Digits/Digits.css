@@ -1,0 +1,72 @@
+.digits {
+    padding: 0 0 200px;
+    background-color: #fff;
+}
+  
+.digits__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.digits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.digits__item + .digits__item {
+    margin-left: 100px;
+}
+  
+.digits__number {
+    margin-bottom: 5px;
+}
+  
+.digits__number p {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+    color: #01353e;
+}
+  
+.digits__desc p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+  
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .digits {
+      padding: 0 0 100px;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .digits {
+      padding: 0 0 100px;
+    }
+    .digits__item + .digits__item {
+      margin-left: 70px;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 768px) {
+    .digits {
+      padding: 0 0 100px;
+    }
+    .digits__item + .digits__item {
+      margin-left: 20px;
+    }
+    .digits__number p {
+      font-size: 32px;
+    }
+}

@@ -1,0 +1,83 @@
+.header {
+	padding: 35px 0;
+	box-sizing: border-box;
+	position: relative;
+  }
+  .header__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+  }
+  .menu__item:not(:last-child) {
+	margin-right: 45px;
+  }
+  .menu__link {
+	color: #FFFFFF;
+	line-height: 117%;
+	text-decoration: none;
+	transition: 0.3s;
+  }
+  .menu__link:hover {
+	border-bottom: 1px solid #00b2a0;
+  }
+  
+  .menu__toggle {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	background: none;
+	border: none;
+  }
+  .menu__toggle__bar {
+	width: 30px;
+	height: 3px;
+	background: #FFFFFF;
+	margin: 4px 0;
+  }
+  
+  .menu__toggle {
+	display: none;
+  }
+  
+  .menu__raw.active {
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 60px;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	padding: 10px 40px;
+  }
+  .menu__raw.active .menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+  }
+  .menu__raw.active .menu__item:not(:last-child) {
+	margin-right: 0;
+	margin-bottom: 5px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	.menu__item:not(:last-child) {
+	  margin-right: 25px;
+	}
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+	.menu__raw {
+	  display: none;
+	}
+	.menu__toggle {
+	  display: flex;
+	}
+  }

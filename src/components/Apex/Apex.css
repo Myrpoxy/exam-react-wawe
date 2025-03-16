@@ -1,0 +1,98 @@
+.apex {
+    padding: 200px 0 350px;
+    background-color: #fff;
+    position: relative;
+}
+
+.apex__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.apex__row {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+
+.apex .apex__text + .apex__text {
+    margin-top: 30px;
+}
+
+.apex__text p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.04em;
+}
+
+.apex__text--first {
+    margin-top: 100px;
+}
+  
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .apex {
+      padding: 100px 0 350px;
+    }
+    .apex__icon img {
+      max-width: 760px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .apex {
+      padding: 10px 0 100px;
+    }
+    .apex__icon img {
+      max-width: 560px;
+    }
+    .apex__text--first {
+      margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .apex {
+      padding: 100px 0 100px;
+      /* background: url('./../../../public/img/apex.jpg') no-repeat center center; */
+      background: url('/img/apex.jpg') no-repeat center center;
+      background: 'lightgray';
+      background-size: cover;
+    }
+    .apex__icon {
+      display: none;
+      overflow: hidden;
+    }
+    .apex__text p {
+      color: #FFFFFF;
+    }
+    .apex__text--first {
+      margin-top: 70px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .apex {
+      padding: 100px 0 100px;
+      /* background: url('./../../../public/img/apex.jpg') no-repeat center center; */
+      background: url('/img/apex.jpg') no-repeat center center;
+      background: 'lightgray';
+      background-size: cover;
+    }
+    .apex__icon {
+      display: none;
+      overflow: hidden;
+    }
+    .apex__row {
+      width: 96%;
+    }
+    .apex__text p {
+      color: #FFFFFF;
+    }
+    .apex__text--first {
+      margin-top: 50px;
+    }
+}

@@ -1,0 +1,131 @@
+.price {
+    padding: 200px 0;
+    background-color: #f8f8f8;
+}
+  
+.price__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 180px -30px 0;
+}
+  
+.price__col {
+    width: 33.3%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    min-height: 577px;
+}
+  
+.price__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.price__title p {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height: 111%;
+    color: #01353e;
+    text-align: center;
+}
+  
+.price__list {
+    margin: 58px 0 30px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+  
+.price__li-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+  
+.price__li-item {
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.04em;
+}
+  
+.price__cost {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price__cost p {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height: 111%;
+    color: #01353e;
+}
+  
+.price__cost span {
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 222%;
+    color: #01353e;
+    vertical-align: middle;
+}
+  
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .price {
+      padding: 100px 0;
+    }
+    .price__row {
+      margin: 100px -20px 0;
+    }
+    .price__col {
+      padding: 0 20px;
+    }
+    .price__list {
+      margin: 58px 0 20px;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .price {
+      padding: 100px 0;
+    }
+    .price__row {
+      margin: 100px -20px 0;
+      flex-wrap: wrap;
+    }
+    .price__col {
+      width: 50%;
+      padding: 0 20px;
+    }
+    .price__col:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .price__list {
+      margin: 58px 0 20px;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 768px) {
+    .price {
+      padding: 100px 0;
+    }
+    .price__row {
+      margin: 50px 0 0;
+      flex-wrap: wrap;
+    }
+    .price__col {
+      width: 96%;
+      padding: 0;
+    }
+    .price__col:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .price__list {
+      margin: 38px 0 20px;
+    }
+}

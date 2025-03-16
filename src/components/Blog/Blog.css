@@ -1,0 +1,133 @@
+.blog {
+    padding: 0 0 200px;
+    background-color: #fff;
+}
+  
+.slider {
+    margin-top: 200px;
+    position: relative;
+}
+  
+.slider__items {
+    display: flex;
+    overflow: hidden;
+}
+  
+.slider__item {
+    /* background: url('./../../../public/img/blog-bg.jpg') no-repeat center center; */
+    background: url('/img/blog-bg.jpg') no-repeat center center;
+    background-color: lightskyblue;
+    background-size: cover;
+    width: 100%;
+}
+  
+.slider__row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+}
+  
+.slider__title p {
+    margin: 0;
+    margin-top: 314px;
+    padding: 0;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+  
+.slider__desc p {
+    margin: 0;
+    margin-bottom: 350px;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+  
+  
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination{
+  margin-bottom: 77px;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+  background-color: #fff;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #00B2A0;
+}
+
+  
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .blog {
+      padding: 0 0 100px;
+    }
+    .slider {
+      margin-top: 100px;
+    }
+    .slider__title p {
+      margin-top: 250px;
+    }
+    .slider__desc p {
+      margin-bottom: 250px;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog {
+      padding: 0 0 100px;
+    }
+    .slider {
+      margin-top: 100px;
+    }
+    .slider__title p {
+      margin-top: 250px;
+    }
+    .slider__desc p {
+      margin-bottom: 250px;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 768px) {
+    .blog {
+      padding: 0 0 100px;
+    }
+    .slider {
+      margin-top: 50px;
+    }
+    .slider__row {
+      width: 100%;
+    }
+    .slider__title p {
+      margin-top: 50px;
+    }
+    .slider__desc p {
+      margin-bottom: 150px;
+    }
+}
